@@ -21,7 +21,7 @@ void	ft_putstr(char *s)
 {
 	while (*s)
 	{
-		write(1 , &*s, 1);
+		write(1, &*s, 1);
 		s++;
 	}
 }
@@ -33,7 +33,7 @@ void	ft_putnbr(int n)
 	num = n;
 	if (num < 0)
 	{
-		write(1 , "-", 1);
+		write(1, "-", 1);
 		num *= -1;
 	}
 	if (num >= 10)
